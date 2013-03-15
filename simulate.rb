@@ -15,10 +15,15 @@ def simulate runs, *player_classes
   rounds = 0
 
   runs.times do
-    game = Werewolf.new
+    game = WerewolfGame.new
     player_classes.each { |_class| game.players << _class.new }
 
-    game.play_round until game.done?
+    until game.done?
+      game.increment_round
+      game.play_night_phase
+      break if game.done?
+      game.play_day_phase
+    end
 
     if game.winner
       hist[game.winner] ||= 0
@@ -38,14 +43,20 @@ def simulate runs, *player_classes
   puts
 end
 
-simulate 5000, Player, Player, Player,  Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player,Player, Player, Player, Player, Player,Player, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Werewolf
+simulate 10, Player, Player, Player,  Werewolf
+# simulate 5000, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Player, Player, Werewolf
+
+
+# simulate 5000, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player,Player, Player, Player, Player, Player,Player, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Player, Player, Player, Player, Player, Werewolf
 
 
 

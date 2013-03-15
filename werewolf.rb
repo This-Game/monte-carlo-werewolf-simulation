@@ -1,22 +1,14 @@
 require_relative 'player'
 
-class Werewolf
+class WerewolfGame
   attr_reader :rounds, :winner, :players
 
   def initialize
     @players = []
-    # @draw = Card.deck.sort_by { rand }
-    # @discard = []
-
-    # action
-    @action = nil
-    @done = false
 
     # stats
     @rounds = 0
-    @restocks = 0
     @winner = nil
-    @runout = false
   end
 
   def done?
@@ -26,7 +18,7 @@ class Werewolf
     elsif wolves.size >= villagers.size
       @winner = "Werewolves"
     end
-    # pp @winner.to_s + " have WON!!!!!!!!!!" if @winner
+    pp @winner.to_s + " have WON!!!!!!!!!!" if @winner
     @winner
   end
 
@@ -34,47 +26,27 @@ class Werewolf
     [@winner, @rounds].join ','
   end
 
-
-  def set_next_action
-
-    case top_card.value
-    when :plus4
-      @action = :draw
-      @draw_amount += 4
-
-    when :plus2
-      @action = :draw
-      @draw_amount += 2
-
-    when :skip
-      @action = :skip
-
-    when :reverse
-      @action = :reverse
-
-    else
-      reset_action
-    end
-
-  end
-
-  def reset_action
-    @action = nil
-    @draw_amount = 0
-  end
-
-  def play_round
+  def increment_round
     @rounds += 1
-    # pp "Round #{rounds}. Players: #{@players.size}"
-    #villagers lynch a player at random
-    killed_player = @players.random_pop
-    # pp "Villagers killed a #{killed_player.class}",
+    puts
+    pp "Round: #{@rounds}"
+  end
 
-    #werewolves kill a villager at random
-    until villager = @players.random.is_villager? do
-      @players.delete villager
-      # pp "Wolves kill a villager "
+  #villagers kill a player at random]
+  def play_day_phase
+    player_to_kill = @players.random
+    @players.delete player_to_kill
+    pp "DAY: Villagers kill a #{player_to_kill.class}"
+  end
+
+  #werewolves kill a villager at random
+  def play_night_phase
+    villager_to_kill = nil
+    until villager_to_kill && villager_to_kill.is_villager? do
+      villager_to_kill = @players.random
     end
+    pp "NIGHT: Wolves kill a #{villager_to_kill.class}"
+    @players.delete villager_to_kill
   end
 
 end
