@@ -7,41 +7,46 @@ require 'chance'
 require 'ruby-debug'
 require 'pp'
 
-require_relative 'uno'
+require_relative 'werewolf'
 
 def simulate runs, *player_classes
   hist = {}
-  uno = nil
-  runouts = 0
+  game = nil
   rounds = 0
 
   runs.times do
-    uno = Uno.new
-    player_classes.each { |_class| uno.players << _class.new }
+    game = Werewolf.new
+    player_classes.each { |_class| game.players << _class.new }
 
-    uno.play_round until uno.done?
+    game.play_round until game.done?
 
-    if uno.winner
-      hist[uno.winner] ||= 0
-      hist[uno.winner] += 1
+    if game.winner
+      hist[game.winner] ||= 0
+      hist[game.winner] += 1
     end
 
-    rounds += uno.rounds
+    rounds += game.rounds
   end
 
-  hist.each_with_index do |n, ix|
-    share = runs / uno.players.size
-    delta = n - share
-    deltap = (delta.to_f / runs) * 100
-    puts "%+0.2f%% %s" % [deltap, uno.players[ix].class]
+  pp player_classes.to_s
+  hist.each_pair do |player_type, wins|
+    share = (wins.to_f / runs) * 100
+
+    pp "#{player_type}: #{wins} wins, #{share.round(2)}%"
+    # delta = v - share
+    # deltap = (delta.to_f / runs) * 100
+    # puts "%+0.2f%% %s" % [deltap, k]
   end
 
-  puts "runouts: #{(runouts.to_f / runs.to_f) * 100.0}%"
   puts "avg rounds: #{ rounds.to_f / runs.to_f }"
   puts
 end
 
-simulate 500, Player, Player, Player, Player, Player, Werewolf
-# simulate 10000, Player, Player, Player, Player, Player, Werewolf, Werewolf
+simulate 5000, Player, Player, Player, Player, Player, Werewolf
+simulate 5000, Player, Player, Player, Player, Player, Werewolf, Werewolf
+simulate 5000, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Werewolf, Werewolf
+
+
+
 # simulate 10000, Player, Player, Player, Player, Player, Werewolf, Werewolf, Werewolf
 
