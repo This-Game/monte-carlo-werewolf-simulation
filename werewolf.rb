@@ -45,7 +45,10 @@ class WerewolfGame
     @phases += 1
   end
 
-  #villagers kill a player at random]
+  # Villagers kill a player at random
+  # in this sim, if there is a Seer and that person randomly sees a Werewolf, the village immediately kills the wolf.
+  # Otherwise, they will put the player in a "cleared" list, and the village will not kill cleared players in the future.
+  # Unrealistically, the Werewolves will not single out the Seer for death; they still kill at random.
   def play_day_phase
     increment_phase
 
@@ -70,13 +73,15 @@ class WerewolfGame
   #werewolves kill a villager at random
   def play_night_phase
     increment_phase
+    villager_to_kill = @players.reject {|player| player.is_werewolf? }.random
 
-    villager_to_kill = nil
-    until villager_to_kill && villager_to_kill.is_villager? do
-      villager_to_kill = @players.random
+    # healer picks someone at random, is ignorant of seer's cleared list
+    if @players.any? { |player| player.is_healer? } && villager_to_kill == @players.random
+      log "NIGHT: Wolves kill nobody; the #{villager_to_kill.class} was healed"
+    else
+      log "NIGHT: Wolves kill a #{villager_to_kill.class}"
+      @players.delete villager_to_kill
     end
-    log "NIGHT: Wolves kill a #{villager_to_kill.class}"
-    @players.delete villager_to_kill
   end
 
 end

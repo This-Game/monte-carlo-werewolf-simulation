@@ -56,19 +56,26 @@ def simulate runs, *player_classes
   puts
 end
 
-# simulate 5000, Player, Player, Player,  Werewolf
-# simulate 5000, Player, Player, Player, Player, Werewolf
-# simulate 5000, Player, Player, Player, Player, Player, Werewolf
+# simulate 5000, Villager, Villager, Villager,  Werewolf
+# simulate 5000, Villager, Villager, Villager, Villager, Werewolf
+# simulate 5000, Villager, Villager, Villager, Villager, Villager, Werewolf
 
 # 7 Person Games
-simulate 5000, Player, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Seer, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Seer, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Seer, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Healer, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Healer, Seer, Werewolf, Werewolf
 
 # 9 Person Games
-simulate 5000, Player, Player, Player, Player, Player, Player, Player, Player, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Player, Player, Werewolf, Werewolf
-simulate 5000, Player, Player, Player, Player, Player, Player, Seer, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Seer, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Healer, Werewolf, Werewolf
+simulate 5000, Villager, Villager, Villager, Villager, Seer, Healer, Werewolf, Werewolf, Werewolf
 
-# simulate 5000, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player,Player, Player, Player, Player, Player, Werewolf, Werewolf
-# simulate 5000, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player, Player,Player, Player, Player, Player, Werewolf, Werewolf, Werewolf
+
+# simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager,Villager, Villager, Villager, Villager, Villager, Werewolf, Werewolf
+# simulate 5000, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager, Villager,Villager, Villager, Villager, Villager, Werewolf, Werewolf, Werewolf
 

@@ -1,4 +1,4 @@
-class Player
+class Villager
   attr_writer :game
 
   def initialize
@@ -16,15 +16,20 @@ class Player
   def is_seer?
     false
   end
+
+  def is_healer?
+    false
+  end
 end
 
-class Werewolf < Player
+class Werewolf < Villager
   def is_werewolf?; true; end
 end
 
-class Seer < Player
+class Seer < Villager
   def is_seer?; true; end
 end
 
-class Healer < Player
+class Healer < Villager
+  def is_healer?; true; end
 end
