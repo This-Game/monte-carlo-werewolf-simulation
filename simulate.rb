@@ -1,11 +1,15 @@
-def require_relative(path)
-  require File.join(File.dirname(caller[0]), path.to_str)
-end
-
 require 'rubygems'
 require 'chance'
 require 'ruby-debug'
 require 'pp'
+
+unless Kernel.respond_to? :require_relative
+  module Kernel
+    def require_relative(path)
+      require File.join(File.dirname(caller[0]), path.to_str)
+    end
+  end
+end
 
 require_relative 'werewolf'
 
@@ -46,7 +50,6 @@ def simulate runs, *player_classes
   end
 
   puts "avg rounds: #{ rounds.to_f / runs.to_f }"
-  puts
   puts
   puts
 end
