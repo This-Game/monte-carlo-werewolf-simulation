@@ -1,0 +1,15 @@
+GIT
+  remote: git://github.com/hoverbird/chance.git
+  revision: 796354aa67659158f5b710de1f5403f59abe6391
+  specs:
+    chance (0.5.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chance!

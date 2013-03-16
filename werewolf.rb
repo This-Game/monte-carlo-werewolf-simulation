@@ -1,14 +1,23 @@
 require_relative 'player'
 
 class WerewolfGame
-  attr_reader :rounds, :winner, :players
+  attr_reader :rounds, :winner, :players, :cleared_players
 
   def initialize
     @players = []
+    @cleared_players = []
 
     # stats
     @rounds = 0
     @winner = nil
+  end
+
+  def log string
+    pp string if ARGV[0]
+  end
+
+  def suspected_players
+    @players - @cleared_players
   end
 
   def done?
@@ -18,7 +27,7 @@ class WerewolfGame
     elsif wolves.size >= villagers.size
       @winner = "Werewolves"
     end
-    pp @winner.to_s + " have WON!!!!!!!!!!" if @winner
+    log @winner.to_s + " have WON!!!!!!!!!!" if @winner
     @winner
   end
 
@@ -28,15 +37,27 @@ class WerewolfGame
 
   def increment_round
     @rounds += 1
-    puts
-    pp "Round: #{@rounds}"
+    log "Round: #{@rounds}"
   end
 
   #villagers kill a player at random]
   def play_day_phase
-    player_to_kill = @players.random
+    player_to_kill = if @players.any? {|player| player.is_seer? }
+      seen_player = suspected_players.random
+      if seen_player.is_werewolf?
+        log "DAY: Seer sees a wolf"
+        seen_player
+      else
+        log "DAY: Seer clears a villager"
+        @cleared_players << seen_player
+        suspected_players.random
+      end
+    else
+      suspected_players.random
+    end
+
+    log "DAY: Villagers kill a #{player_to_kill.class}"
     @players.delete player_to_kill
-    pp "DAY: Villagers kill a #{player_to_kill.class}"
   end
 
   #werewolves kill a villager at random
@@ -45,7 +66,7 @@ class WerewolfGame
     until villager_to_kill && villager_to_kill.is_villager? do
       villager_to_kill = @players.random
     end
-    pp "NIGHT: Wolves kill a #{villager_to_kill.class}"
+    log "NIGHT: Wolves kill a #{villager_to_kill.class}"
     @players.delete villager_to_kill
   end
 

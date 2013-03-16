@@ -13,16 +13,18 @@ class Player
     !is_werewolf?
   end
 
-end
-
-class Werewolf < Player
-  def is_werewolf?
-    true
+  def is_seer?
+    false
   end
 end
 
-class Healer < Player
+class Werewolf < Player
+  def is_werewolf?; true; end
 end
 
 class Seer < Player
+  def is_seer?; true; end
+end
+
+class Healer < Player
 end
