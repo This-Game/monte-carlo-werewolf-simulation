@@ -1,7 +1,7 @@
 require_relative 'player'
 
 class WerewolfGame
-  attr_reader :rounds, :winner, :players, :cleared_players
+  attr_reader :rounds, :phases, :winner, :players, :cleared_players
 
   def initialize
     @players = []
@@ -9,6 +9,7 @@ class WerewolfGame
 
     # stats
     @rounds = 0
+    @phases = 0
     @winner = nil
   end
 
@@ -36,12 +37,18 @@ class WerewolfGame
   end
 
   def increment_round
-    @rounds += 1
     log "Round: #{@rounds}"
+    @rounds += 1
+  end
+
+  def increment_phase
+    @phases += 1
   end
 
   #villagers kill a player at random]
   def play_day_phase
+    increment_phase
+
     player_to_kill = if @players.any? {|player| player.is_seer? }
       seen_player = suspected_players.random
       if seen_player.is_werewolf?
@@ -62,6 +69,8 @@ class WerewolfGame
 
   #werewolves kill a villager at random
   def play_night_phase
+    increment_phase
+
     villager_to_kill = nil
     until villager_to_kill && villager_to_kill.is_villager? do
       villager_to_kill = @players.random
