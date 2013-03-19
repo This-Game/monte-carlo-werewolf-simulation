@@ -11,19 +11,21 @@ opts_parser = OptionParser.new do |opts|
   opts.separator  ""
   opts.separator  "Options"
 
-  opts.on("-w", "--werewolves n", "Werewolf count (default 1)") do |w|
+  opts.on("-w", "--werewolves n", Integer, "Werewolf count (default 1)") do |w|
     options[:werewolves] = w
   end
 
-  opts.on("-v", "--villagers n", "Villager count (default 6)") do |v|
+  opts.on("-v", "--villagers n", Integer, "Villager count (default 6)") do |v|
     options[:villagers] = v
   end
 
-  opts.on("-s", "--seers n", "Seer count (default 0)") do |s|
+  opts.on("-s", "--seers n", Integer, "Seer count (default 0)") do |s|
+    raise OptionParser::InvalidArgument, "We don't simulate more than one Seer" if s > 1
     options[:seers] = s
   end
 
-  opts.on("-h", "--healers n", "Healer count (default 0)") do |h|
+  opts.on("-h", "--healers n", Integer, "Healer count (default 0)") do |h|
+    raise OptionParser::InvalidArgument, "We don't simulate more than one Healer" if h > 1
     options[:healers] = h
   end
 

@@ -55,7 +55,8 @@ class WerewolfGame
     player_to_kill = if @players.any? {|player| player.is_seer? }
       seen_player = suspected_players.random
       if seen_player.is_werewolf?
-        log "DAY: Seer sees a wolf"
+        log "DAY: Seer sees a wolf, outs him/herself"
+        @seer_outed = true
         seen_player
       else
         log "DAY: Seer clears a villager"
@@ -73,10 +74,29 @@ class WerewolfGame
   #werewolves kill a villager at random
   def play_night_phase
     increment_phase
-    villager_to_kill = @players.reject {|player| player.is_werewolf? }.random
 
-    # healer picks someone at random, is ignorant of seer's cleared list
-    if @players.any? { |player| player.is_healer? } && villager_to_kill == @players.random
+    known_seer = @seer_outed && @players.find(&:is_seer?)
+    healer_is_present = @players.any?(&:is_healer?)
+
+    # The healer saves the seer, if the seer is outed. Otherwise, a rando.
+    healed_person = known_seer ? known_seer : @players.random
+
+    # The werewolves try to kill the seer, if outed.
+    villager_to_kill = known_seer && !@seer_spared_by_healer ? known_seer : @players.reject(&:is_werewolf?).random
+
+    villager_to_kill = if known_seer
+      # The wolves will kill a known seer, unless he's already been healed by the healer.
+      if !@seer_spared_by_healer
+        known_seer
+      else # otherwise, skip the seer and kill another villager (why waste a kill when the healer heals the seer?)
+        @players.reject {|player| player.is_seer? || player.is_werewolf?}.random
+      end
+    else
+      @players.reject(&:is_werewolf?).random
+    end
+
+    if healer_is_present && healed_person == villager_to_kill
+      @seer_spared_by_healer = healed_person.is_healer?
       log "NIGHT: Wolves kill nobody; the #{villager_to_kill.class} was healed"
     else
       log "NIGHT: Wolves kill a #{villager_to_kill.class}"
