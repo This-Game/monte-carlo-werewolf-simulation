@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tangle document</title>
+
+    <!-- Tangle -->
+    <script type="text/javascript" src="Tangle.js"></script>
+
+    <!-- TangleKit (optional) -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="TangleKit/TangleKit.js"></script>
+    <script type="text/javascript" src="results.json"></script>
+
+    <!-- example -->
+    <script type="text/javascript">
+        function repeat(num, string) {
+          return new Array(num + 1).join(string);
+        }
+
+        function setUpTangle () {
+          var element = document.getElementById("example");
+
+          var tangle = new Tangle(element, {
+            initialize: function () {
+                this.players = 9;
+                this.werewolves = 2;
+                this.seer = 0;
+                this.healer = 0;
+            },
+
+            update: function () {
+              this.nonWerewolves = this.players - this.werewolves;
+              this.villagers = this.nonWerewolves - this.seer - this.healer;
+
+              var resultKey = repeat(this.villagers, 'V');
+
+              if (this.seer) {
+                resultKey += 'S';
+              }
+              if (this.healer) {
+                resultKey +='H';
+              }
+              resultKey = resultKey + repeat(this.werewolves, 'W');
+
+              console.log(resultKey)
+              var currentResults = results[resultKey];
+              this.win_percentage = currentResults.villager_share;
+              this.phases = currentResults.phases;
+            }
+          });
+        }
+
+    </script>
+</head>
+
+<body onload="setUpTangle();">
+  <div class="container">
+    <h2>Werewolf, yo.</h2>
+
+    <div id="example">
+        <p>Let's say you're playing Werewolf with <span data-var="players" class="TKAdjustableNumber" data-min="6" data-max="20"> people</span>, and <span data-var="werewolves" class="TKAdjustableNumber" data-min="1" data-max="4"> are werewolves</span>.
+
+        <p>Of the <span data-var="nonWerewolves"></span> people who are actually villagers, <span data-var="seer" class="TKToggle TKSwitch"><span>none are seers</span><span>one is a seer</span></span> and <span data-var="healer" class="TKToggle TKSwitch"><span>none are healers</span><span>one is a healer</span></span>.</p>
+
+        <p>The villagers in this scenario, playing more or less randomly,
+        have a <span data-var="win_percentage"></span>% chance of beating the werewolves. Starting at nighttime, games will last an average of <span data-var="phases" data-format="%.0f"></span> phases.</p>
+
+    </div>
+  </div>
+
+
+
+</body>
+</html>

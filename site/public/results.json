@@ -1,0 +1,2002 @@
+var results = {
+  "VVVVVVVVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 11.6626,
+    "villager_share": 76,
+    "phases": 23.1354
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVW": {
+    "rounds": 8.5556,
+    "villager_share": 67,
+    "phases": 16.7874
+  },
+  "VVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 8.8816,
+    "villager_share": 73,
+    "phases": 17.6912
+  },
+  "VVVVVVVVVVVVVVSHWWW": {
+    "rounds": 7.7378,
+    "villager_share": 65,
+    "phases": 15.1964
+  },
+  "VVVVVVVVVVVVVSHWWWW": {
+    "rounds": 8.1516,
+    "villager_share": 55,
+    "phases": 15.9422
+  },
+  "VVVHW": {
+    "rounds": 1.7852,
+    "villager_share": 32,
+    "phases": 3.053
+  },
+  "VVVVVVHW": {
+    "rounds": 2.7228,
+    "villager_share": 52,
+    "phases": 5.3208
+  },
+  "VVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 8.213,
+    "villager_share": 30,
+    "phases": 16.426
+  },
+  "VVVVVVVVVVVSWW": {
+    "rounds": 5.0624,
+    "villager_share": 68,
+    "phases": 10.1248
+  },
+  "VVVVVVVVHWWW": {
+    "rounds": 4.3026,
+    "villager_share": 15,
+    "phases": 8.4122
+  },
+  "VVVVVVVVVVVVVWWWW": {
+    "rounds": 6.3784,
+    "villager_share": 7,
+    "phases": 11.8326
+  },
+  "VVVVVVHWWWW": {
+    "rounds": 2.7302,
+    "villager_share": 2,
+    "phases": 4.6542
+  },
+  "VVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 7.6132,
+    "villager_share": 78,
+    "phases": 15.0522
+  },
+  "WW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVHWWWW": {
+    "rounds": 1.0906,
+    "villager_share": 0,
+    "phases": 1.287
+  },
+  "VVVVVVVVVVVVVSWWWW": {
+    "rounds": 7.1724,
+    "villager_share": 36,
+    "phases": 14.3448
+  },
+  "VVVVVVVVVVSWWW": {
+    "rounds": 5.348,
+    "villager_share": 44,
+    "phases": 10.696
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 10.8688,
+    "villager_share": 26,
+    "phases": 21.0064
+  },
+  "VVVVVVVVVVVVVVVVVVW": {
+    "rounds": 6.5908,
+    "villager_share": 62,
+    "phases": 12.8066
+  },
+  "VVVVVVVVVVVVVVHW": {
+    "rounds": 5.5518,
+    "villager_share": 66,
+    "phases": 11.0084
+  },
+  "VVVVVHW": {
+    "rounds": 2.5176,
+    "villager_share": 42,
+    "phases": 4.5866
+  },
+  "VVVSWW": {
+    "rounds": 1.632,
+    "villager_share": 29,
+    "phases": 3.264
+  },
+  "VVVSHWW": {
+    "rounds": 2.449,
+    "villager_share": 39,
+    "phases": 4.4024
+  },
+  "VVVVVVVVVSHW": {
+    "rounds": 3.2864,
+    "villager_share": 87,
+    "phases": 6.5348
+  },
+  "VVVVVVVVVVVVSHWW": {
+    "rounds": 5.797,
+    "villager_share": 78,
+    "phases": 11.5292
+  },
+  "VVVVVVVHWW": {
+    "rounds": 3.7488,
+    "villager_share": 30,
+    "phases": 7.3256
+  },
+  "VVVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 5.517,
+    "villager_share": 88,
+    "phases": 10.914
+  },
+  "VVVVVVVVVVVVVVSWWW": {
+    "rounds": 7.181,
+    "villager_share": 55,
+    "phases": 14.362
+  },
+  "VVSWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 5.7678,
+    "villager_share": 92,
+    "phases": 11.5356
+  },
+  "VVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 9.448,
+    "villager_share": 65,
+    "phases": 18.7894
+  },
+  "VVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 9.0578,
+    "villager_share": 59,
+    "phases": 17.7952
+  },
+  "VVVVVVVVWW": {
+    "rounds": 3.5236,
+    "villager_share": 30,
+    "phases": 7.0472
+  },
+  "VVVVVVVVVVVHWW": {
+    "rounds": 5.6498,
+    "villager_share": 38,
+    "phases": 11.1334
+  },
+  "VVVVVVVVVVVVVSHWW": {
+    "rounds": 6.2352,
+    "villager_share": 73,
+    "phases": 12.2624
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 10.5112,
+    "villager_share": 77,
+    "phases": 20.9562
+  },
+  "VVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 9.4474,
+    "villager_share": 32,
+    "phases": 18.72
+  },
+  "VVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 9.075,
+    "villager_share": 26,
+    "phases": 17.585
+  },
+  "VVVVVVVVVVVVVVVVWWW": {
+    "rounds": 7.9654,
+    "villager_share": 19,
+    "phases": 15.1294
+  },
+  "VVVVVVVVVVVVVVVSHW": {
+    "rounds": 4.819,
+    "villager_share": 90,
+    "phases": 9.6076
+  },
+  "VVVVSHWWWW": {
+    "rounds": 3.012,
+    "villager_share": 28,
+    "phases": 5.8764
+  },
+  "VVSW": {
+    "rounds": 1,
+    "villager_share": 56,
+    "phases": 2
+  },
+  "VVVVVVVVVVVVVVVSW": {
+    "rounds": 4.553,
+    "villager_share": 85,
+    "phases": 8.9628
+  },
+  "HWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVHWW": {
+    "rounds": 1.5952,
+    "villager_share": 13,
+    "phases": 3.0346
+  },
+  "VVVHWWW": {
+    "rounds": 1.0982,
+    "villager_share": 0,
+    "phases": 1.3308
+  },
+  "VVVVVVVVVVVVWW": {
+    "rounds": 5.4104,
+    "villager_share": 38,
+    "phases": 10.8208
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 11.293,
+    "villager_share": 78,
+    "phases": 22.5128
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 9.2954,
+    "villager_share": 85,
+    "phases": 18.5438
+  },
+  "VVVVVVVVVVVVVVVVVVVVW": {
+    "rounds": 7.2146,
+    "villager_share": 65,
+    "phases": 14.0806
+  },
+  "VVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 8.1372,
+    "villager_share": 17,
+    "phases": 16.0708
+  },
+  "VVVVVVVVVVHW": {
+    "rounds": 4.1518,
+    "villager_share": 61,
+    "phases": 8.1958
+  },
+  "VVVVVHWWWW": {
+    "rounds": 1.8428,
+    "villager_share": 2,
+    "phases": 3.5636
+  },
+  "VVVSWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVSHWWWW": {
+    "rounds": 7.1908,
+    "villager_share": 53,
+    "phases": 14.0068
+  },
+  "VVVVVVVVVWWWW": {
+    "rounds": 3.9694,
+    "villager_share": 2,
+    "phases": 6.9664
+  },
+  "VVVVVVVVVVSWW": {
+    "rounds": 4.8742,
+    "villager_share": 51,
+    "phases": 9.2678
+  },
+  "VVVVVVSWWWW": {
+    "rounds": 3.017,
+    "villager_share": 4,
+    "phases": 5.0808
+  },
+  "VSW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVVVVVVVVVVVVVVVVVW": {
+    "rounds": 7.3446,
+    "villager_share": 72,
+    "phases": 14.6892
+  },
+  "VVVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 9.6914,
+    "villager_share": 14,
+    "phases": 18.5234
+  },
+  "VVVVVVVVVVVHWWWW": {
+    "rounds": 5.8876,
+    "villager_share": 12,
+    "phases": 11.579
+  },
+  "VVVVWW": {
+    "rounds": 1.3982,
+    "villager_share": 13,
+    "phases": 2.7964
+  },
+  "VVVVVVVSWWW": {
+    "rounds": 4.022,
+    "villager_share": 19,
+    "phases": 7.2406
+  },
+  "VVVVVVVVVVVVVHWWW": {
+    "rounds": 7.089,
+    "villager_share": 20,
+    "phases": 13.5562
+  },
+  "VVVVSWWWW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 8.5696,
+    "villager_share": 85,
+    "phases": 17.0932
+  },
+  "VVVW": {
+    "rounds": 1,
+    "villager_share": 32,
+    "phases": 2
+  },
+  "VVVVVSWWW": {
+    "rounds": 2.7538,
+    "villager_share": 9,
+    "phases": 4.602
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 11.8234,
+    "villager_share": 29,
+    "phases": 22.9464
+  },
+  "VVVVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 10.8612,
+    "villager_share": 17,
+    "phases": 21.0778
+  },
+  "VVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 8.9392,
+    "villager_share": 22,
+    "phases": 17.1068
+  },
+  "VVVVVVVVVVVVVVVVHW": {
+    "rounds": 6.1812,
+    "villager_share": 69,
+    "phases": 12.2732
+  },
+  "VVVVVVVVVVVVVVVVW": {
+    "rounds": 5.8496,
+    "villager_share": 61,
+    "phases": 11.3164
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 11.403,
+    "villager_share": 34,
+    "phases": 22.6244
+  },
+  "VVVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 10.1008,
+    "villager_share": 46,
+    "phases": 20.2016
+  },
+  "VVVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 9.1916,
+    "villager_share": 32,
+    "phases": 18.3832
+  },
+  "VVVVVVVVVVHWW": {
+    "rounds": 5.314,
+    "villager_share": 30,
+    "phases": 10.0936
+  },
+  "VVVVVVVVSHW": {
+    "rounds": 3.1148,
+    "villager_share": 81,
+    "phases": 6.0702
+  },
+  "VVW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVVVVVVVSHWW": {
+    "rounds": 5.512,
+    "villager_share": 72,
+    "phases": 10.8014
+  },
+  "VSWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVWW": {
+    "rounds": 5.1852,
+    "villager_share": 27,
+    "phases": 9.6474
+  },
+  "VVVVVVSHW": {
+    "rounds": 2.6138,
+    "villager_share": 76,
+    "phases": 5.0336
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 6.8722,
+    "villager_share": 93,
+    "phases": 13.7232
+  },
+  "VVVVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 10.4346,
+    "villager_share": 34,
+    "phases": 20.6952
+  },
+  "VVVVVVVVVVVVVVWWW": {
+    "rounds": 6.9504,
+    "villager_share": 16,
+    "phases": 13.0666
+  },
+  "VVVVVVVHWWWW": {
+    "rounds": 3.3616,
+    "villager_share": 5,
+    "phases": 6.5514
+  },
+  "VVSWW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVSWW": {
+    "rounds": 2.6576,
+    "villager_share": 44,
+    "phases": 5.3152
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 11.742,
+    "villager_share": 17,
+    "phases": 22.6578
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 5.9992,
+    "villager_share": 89,
+    "phases": 11.891
+  },
+  "VVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 8.1304,
+    "villager_share": 40,
+    "phases": 16.2608
+  },
+  "VVVVVVVVSHWWW": {
+    "rounds": 5.2448,
+    "villager_share": 52,
+    "phases": 10.1076
+  },
+  "SHWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVSWWWW": {
+    "rounds": 2.193,
+    "villager_share": 7,
+    "phases": 4.386
+  },
+  "VVVVVVVSHWWWW": {
+    "rounds": 5.0996,
+    "villager_share": 41,
+    "phases": 9.7386
+  },
+  "WWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 6.2546,
+    "villager_share": 93,
+    "phases": 12.4892
+  },
+  "VVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 8.9516,
+    "villager_share": 20,
+    "phases": 17.9032
+  },
+  "VVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 9.3062,
+    "villager_share": 71,
+    "phases": 18.384
+  },
+  "VVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 9.9294,
+    "villager_share": 62,
+    "phases": 19.5632
+  },
+  "VVVVVVVVVVVHWWW": {
+    "rounds": 6.0754,
+    "villager_share": 16,
+    "phases": 11.5048
+  },
+  "VVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 8.0568,
+    "villager_share": 58,
+    "phases": 16.1136
+  },
+  "VVVVVVVVVHW": {
+    "rounds": 3.9086,
+    "villager_share": 54,
+    "phases": 7.4606
+  },
+  "VVVVVVVVVSWWWW": {
+    "rounds": 4.961,
+    "villager_share": 22,
+    "phases": 9.922
+  },
+  "VVVVSWW": {
+    "rounds": 2.3466,
+    "villager_share": 20,
+    "phases": 3.895
+  },
+  "VVVVVVVVVVVVVSWW": {
+    "rounds": 5.8064,
+    "villager_share": 71,
+    "phases": 11.6128
+  },
+  "WWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVSWWW": {
+    "rounds": 3.3154,
+    "villager_share": 27,
+    "phases": 6.6308
+  },
+  "VVVVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 10.668,
+    "villager_share": 38,
+    "phases": 20.7192
+  },
+  "VVVVVVVHW": {
+    "rounds": 3.1994,
+    "villager_share": 50,
+    "phases": 6.0142
+  },
+  "VVHWW": {
+    "rounds": 1.0926,
+    "villager_share": 2,
+    "phases": 1.3764
+  },
+  "VVVVVHWW": {
+    "rounds": 2.741,
+    "villager_share": 22,
+    "phases": 5.298
+  },
+  "VVVVVVVVVVVVSHW": {
+    "rounds": 4.1252,
+    "villager_share": 86,
+    "phases": 8.1374
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 8.8708,
+    "villager_share": 74,
+    "phases": 17.6712
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVW": {
+    "rounds": 7.9388,
+    "villager_share": 66,
+    "phases": 15.5432
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 10.2874,
+    "villager_share": 54,
+    "phases": 20.1206
+  },
+  "VVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 9.23,
+    "villager_share": 19,
+    "phases": 18.254
+  },
+  "VVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 5.2378,
+    "villager_share": 91,
+    "phases": 10.4514
+  },
+  "VVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 8.7548,
+    "villager_share": 14,
+    "phases": 16.8534
+  },
+  "VVVVVVVVVVVVVVVSHWW": {
+    "rounds": 6.9234,
+    "villager_share": 76,
+    "phases": 13.6522
+  },
+  "SW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVWW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVHWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVWW": {
+    "rounds": 2.5228,
+    "villager_share": 23,
+    "phases": 5.0456
+  },
+  "SHWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 8.263,
+    "villager_share": 73,
+    "phases": 16.4536
+  },
+  "VVVVVVVVVVVVVHWW": {
+    "rounds": 6.5204,
+    "villager_share": 42,
+    "phases": 12.8926
+  },
+  "VVVVVVVSWWWW": {
+    "rounds": 3.7098,
+    "villager_share": 15,
+    "phases": 7.4196
+  },
+  "VVSHWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 12.914,
+    "villager_share": 72,
+    "phases": 25.7384
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 12.501,
+    "villager_share": 67,
+    "phases": 24.7492
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 10.9234,
+    "villager_share": 75,
+    "phases": 21.6468
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 6.5402,
+    "villager_share": 91,
+    "phases": 13.0122
+  },
+  "VVVVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 9.934,
+    "villager_share": 25,
+    "phases": 19.118
+  },
+  "VVVVVVVVVVVVHWWWW": {
+    "rounds": 6.5824,
+    "villager_share": 9,
+    "phases": 12.453
+  },
+  "VVVVVVVVVSWW": {
+    "rounds": 4.3314,
+    "villager_share": 62,
+    "phases": 8.6628
+  },
+  "W": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVSW": {
+    "rounds": 2.7178,
+    "villager_share": 84,
+    "phases": 5.4356
+  },
+  "VVVVVWW": {
+    "rounds": 2.2528,
+    "villager_share": 8,
+    "phases": 3.5878
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 10.5274,
+    "villager_share": 47,
+    "phases": 20.6394
+  },
+  "VVVVVVVVVVVVVVVHWWW": {
+    "rounds": 8.1056,
+    "villager_share": 24,
+    "phases": 15.6228
+  },
+  "VVVVVVVVVVVVVVWW": {
+    "rounds": 6.2896,
+    "villager_share": 43,
+    "phases": 12.5792
+  },
+  "VVVVVVVVVVVVVHW": {
+    "rounds": 5.2478,
+    "villager_share": 61,
+    "phases": 10.1892
+  },
+  "VW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVSHWW": {
+    "rounds": 1.857,
+    "villager_share": 37,
+    "phases": 3.5692
+  },
+  "VVVVVVVVSWWW": {
+    "rounds": 4.3786,
+    "villager_share": 37,
+    "phases": 8.7572
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 12.024,
+    "villager_share": 26,
+    "phases": 24.048
+  },
+  "VVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 6.8396,
+    "villager_share": 70,
+    "phases": 13.601
+  },
+  "VVVVVVVVVVVVSW": {
+    "rounds": 3.7594,
+    "villager_share": 88,
+    "phases": 7.5188
+  },
+  "VVVVVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 11.2686,
+    "villager_share": 23,
+    "phases": 22.3494
+  },
+  "VVVVVVVVVVVVVVVVSHW": {
+    "rounds": 5.1496,
+    "villager_share": 88,
+    "phases": 10.2022
+  },
+  "VVVVVVVVVVVVVVVSWW": {
+    "rounds": 6.5706,
+    "villager_share": 73,
+    "phases": 13.1412
+  },
+  "VVVVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 10.1468,
+    "villager_share": 73,
+    "phases": 20.083
+  },
+  "VVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 8.7956,
+    "villager_share": 29,
+    "phases": 16.8882
+  },
+  "VVVVVVVVVVVVVVWWWW": {
+    "rounds": 6.767,
+    "villager_share": 15,
+    "phases": 13.534
+  },
+  "VVVVVVVVVHWW": {
+    "rounds": 4.7032,
+    "villager_share": 33,
+    "phases": 9.2458
+  },
+  "VVVVVVVVVW": {
+    "rounds": 3.276,
+    "villager_share": 58,
+    "phases": 6.552
+  },
+  "SHWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVSW": {
+    "rounds": 1.6284,
+    "villager_share": 72,
+    "phases": 3.2568
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 9.8902,
+    "villager_share": 86,
+    "phases": 19.738
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 8.6394,
+    "villager_share": 70,
+    "phases": 17.0458
+  },
+  "VVVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 10.2442,
+    "villager_share": 20,
+    "phases": 20.295
+  },
+  "VVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 8.6588,
+    "villager_share": 47,
+    "phases": 16.7918
+  },
+  "VVSWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVSWWWW": {
+    "rounds": 6.081,
+    "villager_share": 29,
+    "phases": 12.162
+  },
+  "VVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 8.9062,
+    "villager_share": 61,
+    "phases": 17.8124
+  },
+  "VVVVVVVVVVVVVW": {
+    "rounds": 4.7116,
+    "villager_share": 65,
+    "phases": 9.4232
+  },
+  "VVVSWWW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVVVVVSHWW": {
+    "rounds": 4.8142,
+    "villager_share": 68,
+    "phases": 9.3724
+  },
+  "VVVVVVVVVVWW": {
+    "rounds": 4.4828,
+    "villager_share": 34,
+    "phases": 8.9656
+  },
+  "VVVVVVVVVVVVVVVHWW": {
+    "rounds": 7.4238,
+    "villager_share": 44,
+    "phases": 14.7036
+  },
+  "VVVVVVVVVVHWWWW": {
+    "rounds": 5.4122,
+    "villager_share": 8,
+    "phases": 10.1086
+  },
+  "SWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVSWWWW": {
+    "rounds": 6.775,
+    "villager_share": 20,
+    "phases": 12.7546
+  },
+  "VVVVVVVVVVVVHWWW": {
+    "rounds": 6.466,
+    "villager_share": 23,
+    "phases": 12.7402
+  },
+  "VVVVVVVWWW": {
+    "rounds": 2.914,
+    "villager_share": 11,
+    "phases": 5.828
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 7.1026,
+    "villager_share": 91,
+    "phases": 14.1334
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 12.0652,
+    "villager_share": 71,
+    "phases": 24.0422
+  },
+  "VVVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 5.7962,
+    "villager_share": 92,
+    "phases": 11.5698
+  },
+  "VVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 5.5842,
+    "villager_share": 89,
+    "phases": 11.083
+  },
+  "VVVVVVVVVVVVVVVVVHW": {
+    "rounds": 6.629,
+    "villager_share": 65,
+    "phases": 12.9894
+  },
+  "VVVVVVVVSHWWWW": {
+    "rounds": 5.7068,
+    "villager_share": 49,
+    "phases": 11.2772
+  },
+  "VVVVVVVVVVVSW": {
+    "rounds": 3.6048,
+    "villager_share": 81,
+    "phases": 7.0224
+  },
+  "VWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVSWWW": {
+    "rounds": 6.9082,
+    "villager_share": 38,
+    "phases": 13.2046
+  },
+  "VVVVVW": {
+    "rounds": 1.797,
+    "villager_share": 47,
+    "phases": 3.594
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 12.324,
+    "villager_share": 36,
+    "phases": 24.488
+  },
+  "VVVVVVVVVVVVVVVVWW": {
+    "rounds": 7.2008,
+    "villager_share": 45,
+    "phases": 14.4016
+  },
+  "VSHW": {
+    "rounds": 1.1196,
+    "villager_share": 58,
+    "phases": 2.1492
+  },
+  "VVVVVVVVVVVWWW": {
+    "rounds": 5.1672,
+    "villager_share": 21,
+    "phases": 10.3344
+  },
+  "VVVVVVVVSWW": {
+    "rounds": 4.0994,
+    "villager_share": 44,
+    "phases": 7.6484
+  },
+  "VVVVVVVVVVVVVSHWWW": {
+    "rounds": 7.3062,
+    "villager_share": 68,
+    "phases": 14.5198
+  },
+  "VVVSHWWW": {
+    "rounds": 2.4294,
+    "villager_share": 30,
+    "phases": 4.7096
+  },
+  "VVVVVVVVVVVVSHWWWW": {
+    "rounds": 7.6348,
+    "villager_share": 58,
+    "phases": 15.153
+  },
+  "VVVVVVVVVHWWW": {
+    "rounds": 4.9812,
+    "villager_share": 14,
+    "phases": 9.2914
+  },
+  "VVVVVVSHWWW": {
+    "rounds": 4.2974,
+    "villager_share": 45,
+    "phases": 8.1466
+  },
+  "VVVVVVSWW": {
+    "rounds": 3.282,
+    "villager_share": 35,
+    "phases": 5.9212
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 9.3928,
+    "villager_share": 81,
+    "phases": 18.7856
+  },
+  "VVVVVVVVVVVVVVSHW": {
+    "rounds": 4.5932,
+    "villager_share": 87,
+    "phases": 9.084
+  },
+  "VVVWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVWWWW": {
+    "rounds": 1.7054,
+    "villager_share": 2,
+    "phases": 3.4108
+  },
+  "VVVVSHWWW": {
+    "rounds": 3.1138,
+    "villager_share": 33,
+    "phases": 5.6588
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 10.588,
+    "villager_share": 66,
+    "phases": 21.176
+  },
+  "VVVVVVVVVVVVW": {
+    "rounds": 4.5564,
+    "villager_share": 55,
+    "phases": 8.663
+  },
+  "SHW": {
+    "rounds": 1,
+    "villager_share": 21,
+    "phases": 1.3306
+  },
+  "VSHWW": {
+    "rounds": 1.177,
+    "villager_share": 10,
+    "phases": 1.5386
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 8.625,
+    "villager_share": 80,
+    "phases": 17.25
+  },
+  "VVVVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 7.5796,
+    "villager_share": 71,
+    "phases": 15.0716
+  },
+  "VVVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 8.2596,
+    "villager_share": 80,
+    "phases": 16.3582
+  },
+  "VVVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 7.3892,
+    "villager_share": 66,
+    "phases": 14.517
+  },
+  "VVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 7.8948,
+    "villager_share": 82,
+    "phases": 15.7356
+  },
+  "VVVVVVVVHWW": {
+    "rounds": 4.3842,
+    "villager_share": 26,
+    "phases": 8.1998
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 12.9086,
+    "villager_share": 21,
+    "phases": 25.1986
+  },
+  "VVVVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 9.7542,
+    "villager_share": 64,
+    "phases": 19.5084
+  },
+  "VVVVVVVVVVVVVVHWWWW": {
+    "rounds": 7.6706,
+    "villager_share": 11,
+    "phases": 14.6452
+  },
+  "VVVSW": {
+    "rounds": 1.5676,
+    "villager_share": 43,
+    "phases": 2.5676
+  },
+  "VVHW": {
+    "rounds": 1.1972,
+    "villager_share": 32,
+    "phases": 2.2438
+  },
+  "VVVVVVHWW": {
+    "rounds": 3.3922,
+    "villager_share": 21,
+    "phases": 6.1672
+  },
+  "VVVVVVVVVVSWWWW": {
+    "rounds": 5.6958,
+    "villager_share": 15,
+    "phases": 10.542
+  },
+  "VVVVVVVVVWW": {
+    "rounds": 4.2816,
+    "villager_share": 21,
+    "phases": 7.7778
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 10.825,
+    "villager_share": 53,
+    "phases": 21.5168
+  },
+  "VVVVVVVWW": {
+    "rounds": 3.2936,
+    "villager_share": 16,
+    "phases": 5.7472
+  },
+  "VVVVVVSW": {
+    "rounds": 2.189,
+    "villager_share": 80,
+    "phases": 4.378
+  },
+  "VVVVVVVVVVWWW": {
+    "rounds": 4.86,
+    "villager_share": 10,
+    "phases": 8.8226
+  },
+  "VVVVVVVVVVVVSWW": {
+    "rounds": 5.589,
+    "villager_share": 58,
+    "phases": 10.7632
+  },
+  "VVVVVVVVVVVSWWW": {
+    "rounds": 5.9998,
+    "villager_share": 33,
+    "phases": 11.3392
+  },
+  "VVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 7.2838,
+    "villager_share": 76,
+    "phases": 14.5676
+  },
+  "VVVVVVVVVVVVVVVHW": {
+    "rounds": 5.936,
+    "villager_share": 63,
+    "phases": 11.5874
+  },
+  "VHWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVHWWW": {
+    "rounds": 1.769,
+    "villager_share": 5,
+    "phases": 3.3958
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 10.6974,
+    "villager_share": 53,
+    "phases": 21.3948
+  },
+  "VVVVVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 9.966,
+    "villager_share": 51,
+    "phases": 19.8094
+  },
+  "VVVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 10.0636,
+    "villager_share": 28,
+    "phases": 19.5774
+  },
+  "VVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 8.1136,
+    "villager_share": 71,
+    "phases": 16.1428
+  },
+  "VVVVVSW": {
+    "rounds": 2.055,
+    "villager_share": 62,
+    "phases": 3.7368
+  },
+  "VVVVVVVVWWWW": {
+    "rounds": 3.1496,
+    "villager_share": 5,
+    "phases": 6.2992
+  },
+  "VHW": {
+    "rounds": 1,
+    "villager_share": 11,
+    "phases": 1.3374
+  },
+  "VVVVVSHWWW": {
+    "rounds": 3.7392,
+    "villager_share": 46,
+    "phases": 7.3338
+  },
+  "VVVVVVVVVVVVVVSW": {
+    "rounds": 4.2536,
+    "villager_share": 89,
+    "phases": 8.5072
+  },
+  "VVVVVVVVVVSHWWWW": {
+    "rounds": 6.6726,
+    "villager_share": 54,
+    "phases": 13.2234
+  },
+  "VVVVW": {
+    "rounds": 1.747,
+    "villager_share": 25,
+    "phases": 2.747
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 9.6148,
+    "villager_share": 82,
+    "phases": 19.0838
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 11.8454,
+    "villager_share": 21,
+    "phases": 23.0796
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 9.0904,
+    "villager_share": 73,
+    "phases": 17.915
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 9.7728,
+    "villager_share": 52,
+    "phases": 19.5456
+  },
+  "VVVVVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 10.725,
+    "villager_share": 15,
+    "phases": 20.6094
+  },
+  "VVVVVVVVVVVVVVVVVVVVSHW": {
+    "rounds": 6.0582,
+    "villager_share": 90,
+    "phases": 12.0366
+  },
+  "VVVVVVVW": {
+    "rounds": 2.5422,
+    "villager_share": 54,
+    "phases": 5.0844
+  },
+  "VVVVVVVVVVVVHWW": {
+    "rounds": 6.1816,
+    "villager_share": 35,
+    "phases": 11.8638
+  },
+  "VVVVVVVVVSHWWW": {
+    "rounds": 5.6482,
+    "villager_share": 60,
+    "phases": 11.1748
+  },
+  "VVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 8.2646,
+    "villager_share": 46,
+    "phases": 16.3838
+  },
+  "VVVVVVVVVVVVVWW": {
+    "rounds": 6.0886,
+    "villager_share": 30,
+    "phases": 11.4844
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 12.54,
+    "villager_share": 43,
+    "phases": 24.5156
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 11.003,
+    "villager_share": 50,
+    "phases": 22.006
+  },
+  "VVVVVVVVVVVVVVSWWWW": {
+    "rounds": 7.8408,
+    "villager_share": 23,
+    "phases": 14.9208
+  },
+  "VVVVVVW": {
+    "rounds": 2.455,
+    "villager_share": 37,
+    "phases": 4.2872
+  },
+  "VSHWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 12.296,
+    "villager_share": 25,
+    "phases": 24.4048
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 11.6854,
+    "villager_share": 66,
+    "phases": 23.1048
+  },
+  "VVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 8.1186,
+    "villager_share": 47,
+    "phases": 16.2372
+  },
+  "VVVVVVVVVVVVVVVVSWW": {
+    "rounds": 7.0064,
+    "villager_share": 66,
+    "phases": 13.68
+  },
+  "VVVVVVVVVVVVVVVSWWW": {
+    "rounds": 7.759,
+    "villager_share": 44,
+    "phases": 14.9636
+  },
+  "VVVVVVVVVVVVVVVW": {
+    "rounds": 5.3494,
+    "villager_share": 67,
+    "phases": 10.6988
+  },
+  "VVVVVWWW": {
+    "rounds": 1.6194,
+    "villager_share": 6,
+    "phases": 3.2388
+  },
+  "VVVVVVVVVVSHWWW": {
+    "rounds": 6.1294,
+    "villager_share": 57,
+    "phases": 11.9152
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 11.955,
+    "villager_share": 31,
+    "phases": 23.3744
+  },
+  "VVVVVVVVVVVVVVSHWW": {
+    "rounds": 6.5248,
+    "villager_share": 79,
+    "phases": 12.9872
+  },
+  "VVVVVVSHWWWW": {
+    "rounds": 4.5152,
+    "villager_share": 41,
+    "phases": 8.8838
+  },
+  "VVVVVVVVVVSW": {
+    "rounds": 3.2896,
+    "villager_share": 85,
+    "phases": 6.5792
+  },
+  "VVVVVVVSHWWW": {
+    "rounds": 4.6874,
+    "villager_share": 53,
+    "phases": 9.2462
+  },
+  "VVVVVVVVHWWWW": {
+    "rounds": 4.1174,
+    "villager_share": 4,
+    "phases": 7.4578
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 10.4312,
+    "villager_share": 44,
+    "phases": 20.3116
+  },
+  "VVVVVVVVVVVVVVVVVVVVVHW": {
+    "rounds": 7.8706,
+    "villager_share": 69,
+    "phases": 15.4998
+  },
+  "VVVVWWW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVVVSHW": {
+    "rounds": 2.8018,
+    "villager_share": 84,
+    "phases": 5.556
+  },
+  "VVVVVVVVVVVVVWWW": {
+    "rounds": 6.21,
+    "villager_share": 24,
+    "phases": 12.42
+  },
+  "VVVVVVVWWWW": {
+    "rounds": 2.5926,
+    "villager_share": 1,
+    "phases": 4.1982
+  },
+  "VVVVVVVVVVHWWW": {
+    "rounds": 5.3942,
+    "villager_share": 19,
+    "phases": 10.5948
+  },
+  "VVVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 10.7978,
+    "villager_share": 64,
+    "phases": 21.3134
+  },
+  "VVVVVVVVVVVVVVVVHWW": {
+    "rounds": 7.9676,
+    "villager_share": 40,
+    "phases": 15.4684
+  },
+  "VVVVVVVVVVVVVVVVSW": {
+    "rounds": 4.7724,
+    "villager_share": 90,
+    "phases": 9.5448
+  },
+  "VVVVWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVWWWW": {
+    "rounds": 1,
+    "villager_share": 0,
+    "phases": 1
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 9.869,
+    "villager_share": 75,
+    "phases": 19.4884
+  },
+  "VVVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 7.9584,
+    "villager_share": 78,
+    "phases": 15.9168
+  },
+  "VVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 7.6966,
+    "villager_share": 69,
+    "phases": 15.093
+  },
+  "VVVVVVVVVVVVVVVVVWW": {
+    "rounds": 7.8738,
+    "villager_share": 36,
+    "phases": 15.114
+  },
+  "VVVVVVVVVVVVVVHWWW": {
+    "rounds": 7.477,
+    "villager_share": 26,
+    "phases": 14.7636
+  },
+  "VVVVVVVVVVVW": {
+    "rounds": 3.9896,
+    "villager_share": 62,
+    "phases": 7.9792
+  },
+  "HW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVHWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVSHW": {
+    "rounds": 3.8648,
+    "villager_share": 87,
+    "phases": 7.6898
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 11.0232,
+    "villager_share": 24,
+    "phases": 22.0464
+  },
+  "VVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 8.5724,
+    "villager_share": 69,
+    "phases": 16.9002
+  },
+  "VSWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 11.9412,
+    "villager_share": 53,
+    "phases": 23.8824
+  },
+  "VVVVVVVVVVVVWWWW": {
+    "rounds": 5.6182,
+    "villager_share": 11,
+    "phases": 11.2364
+  },
+  "VVVSHW": {
+    "rounds": 1.741,
+    "villager_share": 73,
+    "phases": 3.409
+  },
+  "VVVVSHWW": {
+    "rounds": 2.8612,
+    "villager_share": 55,
+    "phases": 5.6006
+  },
+  "VVVVVVVSHWW": {
+    "rounds": 4.085,
+    "villager_share": 61,
+    "phases": 7.8566
+  },
+  "VVVVVVVVVVVVSWWW": {
+    "rounds": 6.264,
+    "villager_share": 50,
+    "phases": 12.528
+  },
+  "HWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVHWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 9.978,
+    "villager_share": 22,
+    "phases": 19.956
+  },
+  "VVVVVVVVVVVVVVVVVVHWWWW": {
+    "rounds": 9.826,
+    "villager_share": 16,
+    "phases": 18.9972
+  },
+  "VVVVVVVVVVVVVVVVVW": {
+    "rounds": 6.017,
+    "villager_share": 69,
+    "phases": 12.034
+  },
+  "VVVVVVVVVVVVVVSWW": {
+    "rounds": 6.3172,
+    "villager_share": 62,
+    "phases": 12.26
+  },
+  "VVVVVSHWW": {
+    "rounds": 3.326,
+    "villager_share": 53,
+    "phases": 6.2712
+  },
+  "VVVVVVVVVWWW": {
+    "rounds": 4.0988,
+    "villager_share": 15,
+    "phases": 8.1976
+  },
+  "VVVVVVVVSWWWW": {
+    "rounds": 4.4604,
+    "villager_share": 9,
+    "phases": 8.0166
+  },
+  "VVVVVVVVHW": {
+    "rounds": 3.4298,
+    "villager_share": 57,
+    "phases": 6.735
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 11.424,
+    "villager_share": 69,
+    "phases": 22.848
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 11.4034,
+    "villager_share": 50,
+    "phases": 22.4118
+  },
+  "VVVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 9.1882,
+    "villager_share": 50,
+    "phases": 18.2336
+  },
+  "VVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 8.8132,
+    "villager_share": 44,
+    "phases": 17.1886
+  },
+  "SWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVSW": {
+    "rounds": 3.0768,
+    "villager_share": 77,
+    "phases": 5.9294
+  },
+  "VVVVVVVVVSWWW": {
+    "rounds": 5.0552,
+    "villager_share": 27,
+    "phases": 9.3842
+  },
+  "VVVVVVVVVVVVSHWWW": {
+    "rounds": 6.9162,
+    "villager_share": 62,
+    "phases": 13.5282
+  },
+  "VVVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 8.7782,
+    "villager_share": 38,
+    "phases": 16.9406
+  },
+  "VVVVVSHWWWW": {
+    "rounds": 3.7094,
+    "villager_share": 30,
+    "phases": 6.8426
+  },
+  "VVVVVVVVVVVVHW": {
+    "rounds": 4.8194,
+    "villager_share": 64,
+    "phases": 9.5408
+  },
+  "VVVVHWW": {
+    "rounds": 2.3478,
+    "villager_share": 13,
+    "phases": 4.0074
+  },
+  "VVVVVVVSW": {
+    "rounds": 2.5924,
+    "villager_share": 71,
+    "phases": 4.897
+  },
+  "VHWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 8.9504,
+    "villager_share": 49,
+    "phases": 17.9008
+  },
+  "VVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 7.8752,
+    "villager_share": 18,
+    "phases": 15.7504
+  },
+  "VVVVVVVVVVVVVVVWWW": {
+    "rounds": 7.2318,
+    "villager_share": 26,
+    "phases": 14.4636
+  },
+  "VVVSHWWWW": {
+    "rounds": 1.255,
+    "villager_share": 4,
+    "phases": 1.609
+  },
+  "VVVVVVVHWWW": {
+    "rounds": 3.8524,
+    "villager_share": 10,
+    "phases": 6.9956
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 6.7216,
+    "villager_share": 93,
+    "phases": 13.4432
+  },
+  "VVVVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 11.2022,
+    "villager_share": 69,
+    "phases": 22.3182
+  },
+  "VVVVVVVVVVVVVVHWW": {
+    "rounds": 7.0842,
+    "villager_share": 38,
+    "phases": 13.6894
+  },
+  "VVWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVSHW": {
+    "rounds": 3.5928,
+    "villager_share": 85,
+    "phases": 7.0606
+  },
+  "VVVVVHWWW": {
+    "rounds": 2.6004,
+    "villager_share": 5,
+    "phases": 4.4338
+  },
+  "VVVVHW": {
+    "rounds": 2.0018,
+    "villager_share": 45,
+    "phases": 3.8572
+  },
+  "VVVVVVVVVVVVVVVWW": {
+    "rounds": 6.9762,
+    "villager_share": 35,
+    "phases": 13.3032
+  },
+  "HWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVW": {
+    "rounds": 3.8642,
+    "villager_share": 49,
+    "phases": 7.2252
+  },
+  "VVSHWWW": {
+    "rounds": 1.2144,
+    "villager_share": 5,
+    "phases": 1.5548
+  },
+  "VVVVVVVVVVWWWW": {
+    "rounds": 4.4556,
+    "villager_share": 9,
+    "phases": 8.9112
+  },
+  "VVVVVVVVVVVSHWWW": {
+    "rounds": 6.4796,
+    "villager_share": 64,
+    "phases": 12.854
+  },
+  "VSHWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 6.2472,
+    "villager_share": 93,
+    "phases": 12.4944
+  },
+  "VVVVVVVVVVVVVVVVVVVSHWWW": {
+    "rounds": 9.7686,
+    "villager_share": 75,
+    "phases": 19.4602
+  },
+  "VVVVVVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 10.3066,
+    "villager_share": 66,
+    "phases": 20.5116
+  },
+  "VVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 7.1338,
+    "villager_share": 80,
+    "phases": 14.2114
+  },
+  "VVVVVVSHWW": {
+    "rounds": 3.648,
+    "villager_share": 63,
+    "phases": 7.1904
+  },
+  "VVVVVVVVW": {
+    "rounds": 3.135,
+    "villager_share": 45,
+    "phases": 5.7204
+  },
+  "VWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "SWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 9.7732,
+    "villager_share": 32,
+    "phases": 18.8754
+  },
+  "VVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 9.1254,
+    "villager_share": 44,
+    "phases": 18.2508
+  },
+  "VVVVVVVVVVVVVSW": {
+    "rounds": 4.0586,
+    "villager_share": 83,
+    "phases": 7.9528
+  },
+  "VVVVVVVVVVVWWWW": {
+    "rounds": 5.2432,
+    "villager_share": 4,
+    "phases": 9.5346
+  },
+  "VSWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVVVVVVVVVVVVVVVSWW": {
+    "rounds": 8.4568,
+    "villager_share": 70,
+    "phases": 16.6138
+  },
+  "VVVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 9.4782,
+    "villager_share": 51,
+    "phases": 18.4726
+  },
+  "VVVVVVVVVVVVVVVWWWW": {
+    "rounds": 7.527,
+    "villager_share": 9,
+    "phases": 14.1488
+  },
+  "VVVVVVVVVHWWWW": {
+    "rounds": 4.6536,
+    "villager_share": 8,
+    "phases": 9.1116
+  },
+  "VVVVVVVVWWW": {
+    "rounds": 3.7118,
+    "villager_share": 6,
+    "phases": 6.4882
+  },
+  "VVVVVVVVVVSHWW": {
+    "rounds": 5.128,
+    "villager_share": 74,
+    "phases": 10.1786
+  },
+  "VVVVSWWW": {
+    "rounds": 1.9908,
+    "villager_share": 14,
+    "phases": 3.9816
+  },
+  "VVVVVVVVVVVVVVVVVVVVVSHWW": {
+    "rounds": 8.853,
+    "villager_share": 82,
+    "phases": 17.5632
+  },
+  "VVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 5.251,
+    "villager_share": 91,
+    "phases": 10.502
+  },
+  "VVVVVVVVVVVVVVSHWWWW": {
+    "rounds": 8.582,
+    "villager_share": 60,
+    "phases": 17.043
+  },
+  "VVVVVVVVVVVHW": {
+    "rounds": 4.5706,
+    "villager_share": 58,
+    "phases": 8.8144
+  },
+  "VVVVVVWWW": {
+    "rounds": 2.4478,
+    "villager_share": 2,
+    "phases": 3.9238
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVW": {
+    "rounds": 8.1088,
+    "villager_share": 73,
+    "phases": 16.2176
+  },
+  "VVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 8.48,
+    "villager_share": 28,
+    "phases": 16.775
+  },
+  "VVVVVVVVVVVVVHWWWW": {
+    "rounds": 7.025,
+    "villager_share": 15,
+    "phases": 13.847
+  },
+  "VVSHW": {
+    "rounds": 1.5918,
+    "villager_share": 54,
+    "phases": 2.7998
+  },
+  "VVVVVSHW": {
+    "rounds": 2.2694,
+    "villager_share": 80,
+    "phases": 4.4826
+  },
+  "VHWWWW": {
+    "rounds": 0,
+    "villager_share": 0,
+    "phases": 0
+  },
+  "VVVVVVHWWW": {
+    "rounds": 3.1472,
+    "villager_share": 11,
+    "phases": 6.1206
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 11.122,
+    "villager_share": 37,
+    "phases": 22.244
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSW": {
+    "rounds": 6.5268,
+    "villager_share": 89,
+    "phases": 12.9528
+  },
+  "VVVVVVVVVVVVVVW": {
+    "rounds": 5.2374,
+    "villager_share": 57,
+    "phases": 10.0486
+  },
+  "VVVVVVVVVVVVVVVVVVVVHWW": {
+    "rounds": 9.6788,
+    "villager_share": 45,
+    "phases": 18.9206
+  },
+  "VVVVVVVVSHWW": {
+    "rounds": 4.4,
+    "villager_share": 69,
+    "phases": 8.7064
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVSWWWW": {
+    "rounds": 11.6568,
+    "villager_share": 39,
+    "phases": 22.708
+  },
+  "VVVVVVVVVVVVVVVVVVVVVHWWW": {
+    "rounds": 10.9956,
+    "villager_share": 31,
+    "phases": 21.4506
+  },
+  "VVVVVVVVVVVVVVVVVVVVVWWW": {
+    "rounds": 10.1714,
+    "villager_share": 36,
+    "phases": 20.3428
+  },
+  "VVVVVVVVVVVVVVVVVVVVVWW": {
+    "rounds": 9.5926,
+    "villager_share": 41,
+    "phases": 18.6022
+  },
+  "VVVVVVVVVVVVVVVVVVVW": {
+    "rounds": 6.6798,
+    "villager_share": 72,
+    "phases": 13.3596
+  },
+  "VVVVVVVVVVVVVVVVVWWWW": {
+    "rounds": 8.63,
+    "villager_share": 11,
+    "phases": 16.3766
+  },
+  "VVVVSHW": {
+    "rounds": 2.1148,
+    "villager_share": 68,
+    "phases": 3.9642
+  },
+  "VVVVVVVVVVVVVSHW": {
+    "rounds": 4.3076,
+    "villager_share": 89,
+    "phases": 8.5814
+  },
+  "VVVVVVVVVVVVVVVVVVVVVVVSWWW": {
+    "rounds": 11.1134,
+    "villager_share": 57,
+    "phases": 21.7978
+  },
+  "VVVVVVVVVVVVVVVVVSW": {
+    "rounds": 5.0954,
+    "villager_share": 86,
+    "phases": 10.054
+  },
+  "VVVVVVVVVVVVWWW": {
+    "rounds": 5.9256,
+    "villager_share": 12,
+    "phases": 10.98
+  },
+  "VVVVVVVSWW": {
+    "rounds": 3.5328,
+    "villager_share": 55,
+    "phases": 7.0656
+  },
+  "VVVVVVVVVSHWWWW": {
+    "rounds": 6.2302,
+    "villager_share": 47,
+    "phases": 12.0508
+  }
+};
