@@ -7,9 +7,21 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    columnize (0.3.6)
+    json (1.7.7)
+    linecache (0.46)
+      rbx-require-relative (> 0.0.4)
+    rbx-require-relative (0.0.9)
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   chance!
+  json
+  ruby-debug
