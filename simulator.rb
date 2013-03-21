@@ -8,6 +8,7 @@ class Simulator
     self.rounds = 0
     self.phases = 0
 
+    $debug = options[:debug]
     self.player_classes = options[:villagers].times.collect{ Villager } +
                           options[:seers].times.collect{ Seer } +
                           options[:healers].times.collect{ Healer } +
@@ -39,27 +40,32 @@ class Simulator
     end
 
     villager_share = 0
-    # puts results_key
+    puts results_key if $debug
     hist.keys.sort.each do |player_type|
       wins  = hist[player_type]
       share = (wins.to_f / runs) * 100
 
       if player_type == 'Villagers'
-        # puts "V |" + ("#" * share.to_i) +  ("–" * (100 - share).to_i) + "| W"
+        puts "V |" + ("#" * share.to_i) +  ("–" * (100 - share).to_i) + "| W" if $debug
         villager_share = share.to_i
       end
-      # puts "#{player_type}: #{wins} wins, #{share.round()}%"
+      if $debug
+        puts "#{player_type}: #{wins} wins, #{share.round()}% \n\n"
+      end
     end
 
-    # puts
-    # puts "avg rounds: #{ rounds.to_f / runs.to_f }"
-    # puts "avg phases: #{ phases.to_f / runs.to_f }"
-    # puts
-    {results_key => {
-      :villager_share => villager_share,
-      :rounds => rounds.to_f / runs.to_f,
-      :phases => phases.to_f / runs.to_f }
-    }
+    if $debug
+      puts
+      puts "avg rounds: #{ rounds.to_f / runs.to_f }"
+      puts "avg phases: #{ phases.to_f / runs.to_f }"
+      puts
+    end
 
+    {
+      results_key => {
+        :villager_share => villager_share,
+        :rounds => rounds.to_f / runs.to_f,
+        :phases => phases.to_f / runs.to_f }
+    }
   end
 end

@@ -33,6 +33,14 @@ opts_parser = OptionParser.new do |opts|
     options[:runs] = r
   end
 
+  opts.on("-c", "--combinator", "Run in combinator mode (runs all combinations, ignoring other options") do
+    options[:combinator] = true
+  end
+
+  opts.on("-d", "--debug", "Run in debug mode (outputs details of individual games)") do
+    options[:debug] = true
+  end
+
   # opts.on("-o", "--output TYPE", "Output format, can be JSON or CSV") do |o|
   #   options[:output] = o
   # end
@@ -75,5 +83,9 @@ end
 require_relative 'werewolf'
 require_relative 'simulator'
 require_relative 'combinator'
-# hist = Simulator.new(options).go
-# p hist
+
+if options[:combinator]
+  Combinator.new.go
+else
+  Simulator.new(options).go
+end

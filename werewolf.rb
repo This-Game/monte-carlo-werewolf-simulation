@@ -14,7 +14,7 @@ class WerewolfGame
   end
 
   def log string
-    pp string if ARGV[0] == 'debug'
+    pp string if $debug
   end
 
   def suspected_players
