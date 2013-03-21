@@ -1,8 +1,8 @@
 require 'json'
 
 class Combinator
-  def initialize
-    @runs = 5000
+  def initialize(options = {})
+    @runs = options[:runs] || 5000
     @results = {}
   end
 
@@ -16,7 +16,7 @@ class Combinator
       end
     end
 
-    File.open 'results.json', 'w' do |f|
+    File.open 'site/public/results.json', 'w' do |f|
       f << @results.to_json
     end
   end

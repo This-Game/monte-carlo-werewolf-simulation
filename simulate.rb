@@ -85,7 +85,7 @@ require_relative 'simulator'
 require_relative 'combinator'
 
 if options[:combinator]
-  Combinator.new.go
+  Combinator.new(options).go
 else
   Simulator.new(options).go
 end
