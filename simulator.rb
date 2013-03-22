@@ -1,5 +1,5 @@
 class Simulator
-  attr_accessor :runs, :hist, :rounds, :phases, :game, :player_classes, :results_key
+  attr_accessor :runs, :hist, :group_by, :rounds, :phases, :game, :player_classes, :results_key
 
   def self.go(options)
     new(options).run
@@ -11,6 +11,7 @@ class Simulator
     self.game = nil
     self.rounds = 0
     self.phases = 0
+    self.group_by = options[:combinator]
 
     $debug = options[:debug]
     self.player_classes = options[:villagers].times.collect{ Villager } +
@@ -63,12 +64,22 @@ class Simulator
       puts
     end
 
-    [ villager_share, {
-        :results_key => results_key,
-        :rounds => rounds.to_f / runs.to_f,
-        :phases => phases.to_f / runs.to_f
-      }
-    ]
+    if group_by == "player_number"
+      [ results_key.length, {
+          :results_key => results_key,
+          :villager_share => villager_share,
+          :rounds => rounds.to_f / runs.to_f,
+          :phases => phases.to_f / runs.to_f
+        }
+      ]
+    else
+      [ villager_share, {
+          :results_key => results_key,
+          :rounds => rounds.to_f / runs.to_f,
+          :phases => phases.to_f / runs.to_f
+        }
+      ]
+    end
   end
 
 end

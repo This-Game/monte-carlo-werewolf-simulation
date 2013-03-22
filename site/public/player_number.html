@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Werewolf: Reactive Rules</title>
+
+  <script type="text/javascript" src="Tangle.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="TangleKit/TangleKit.css" type="text/css">
+  <script src="TangleKit/mootools.js"></script>
+  <script src="TangleKit/sprintf.js"></script>
+  <script src="TangleKit/BVTouchable.js"></script>
+  <script src="TangleKit/TangleKit.js"></script>
+  <script src="data/player_number.json"></script>
+  <script src="reactive_by_player_number.js"></script>
+</head>
+
+<body onload="setUpTangle();">
+  <div class="container">
+    <div class="span5 offset3">
+      <h2>Werewolf, yo.</h2>
+
+      <div id="reactive">
+          <p>Let's say you're playing Werewolf with <span data-var="players" class="TKAdjustableNumber" data-min="6" data-max="20"> people</span>.
+
+          <p>For maximum fun, you should play with:</p>
+          <p id="results">
+          </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

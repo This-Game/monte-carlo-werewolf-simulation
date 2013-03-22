@@ -33,8 +33,10 @@ opts_parser = OptionParser.new do |opts|
     options[:runs] = r
   end
 
-  opts.on("-c", "--combinator-type t", "Run in combinator mode (default is group_by_win_percentage") do |t|
-    options[:combinator] = t || 'win_percentage'
+  opts.on("-c", "--combinator-type t", "Run in combinator mode (default is group_by_win_percentage") do |type|
+    puts "0000"
+    puts type
+    options[:combinator] = type || 'player_number'
   end
 
   opts.on("-d", "--debug", "Run in debug mode (outputs details of individual games)") do
@@ -55,7 +57,6 @@ opts_parser = OptionParser.new do |opts|
   opts.separator  ""
   opts.separator  "A 9 person game with 5 villagers, two werewolves, a seer, and a healer: "
   opts.separator  "\tsimulate -v 6 -w 2 -s 1 -h 1"
-
 end
 
 options[:werewolves] ||= 1
@@ -65,7 +66,6 @@ options[:healers] ||= 0
 options[:runs] ||= 5000
 
 opts_parser.parse!
-
 puts opts_parser
 
 unless Kernel.respond_to? :require_relative
