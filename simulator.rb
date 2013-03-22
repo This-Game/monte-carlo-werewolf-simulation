@@ -1,6 +1,10 @@
 class Simulator
   attr_accessor :runs, :hist, :rounds, :phases, :game, :player_classes, :results_key
 
+  def self.go(options)
+    new(options).run
+  end
+
   def initialize(options)
     self.runs = options[:runs]
     self.hist = {}
@@ -16,15 +20,13 @@ class Simulator
     self.results_key = player_classes.collect {|c| c.to_s[0,1]}.join
   end
 
-  def go
+  def run
     runs.times do
       game = WerewolfGame.new
       self.player_classes.each { |_class| game.players << _class.new }
 
       until game.done?
         game.increment_round
-
-        # Day first, then Night. Swap these for weirdoes who play starting with a nighttime killing phase.
         game.play_night_phase
         break if game.done?
         game.play_day_phase
@@ -61,11 +63,12 @@ class Simulator
       puts
     end
 
-    {
-      results_key => {
-        :villager_share => villager_share,
+    [ villager_share, {
+        :results_key => results_key,
         :rounds => rounds.to_f / runs.to_f,
-        :phases => phases.to_f / runs.to_f }
-    }
+        :phases => phases.to_f / runs.to_f
+      }
+    ]
   end
+
 end
