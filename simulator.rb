@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class Simulator
   attr_accessor :runs, :hist, :group_by, :rounds, :phases, :game, :player_classes, :results_key
 

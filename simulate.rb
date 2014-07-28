@@ -1,5 +1,6 @@
 #!/bin/env ruby
 # encoding: utf-8
+
 require 'rubygems'
 require 'chance'
 require 'pp'
@@ -36,7 +37,7 @@ opts_parser = OptionParser.new do |opts|
   opts.on("-c", "--combinator-type t", "Run in combinator mode (default is group_by_win_percentage") do |type|
     puts "0000"
     puts type
-    options[:combinator] = type || 'player_number'
+    options[:combinator] = type || 'group_by_win_percentage'
   end
 
   opts.on("-d", "--debug", "Run in debug mode (outputs details of individual games)") do

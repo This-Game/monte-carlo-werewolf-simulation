@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class Villager
   attr_writer :game
 
