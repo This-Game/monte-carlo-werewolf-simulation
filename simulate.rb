@@ -57,7 +57,7 @@ opts_parser = OptionParser.new do |opts|
   opts.separator  "\tsimulate -v 6 -w 2 -s 1"
   opts.separator  ""
   opts.separator  "A 9 person game with 5 villagers, two werewolves, a seer, and a healer: "
-  opts.separator  "\tsimulate -v 6 -w 2 -s 1 -h 1"
+  opts.separator  "\tsimulate -v 5 -w 2 -s 1 -h 1"
 end
 
 options[:werewolves] ||= 1
